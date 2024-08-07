@@ -17,3 +17,7 @@
     margin-right: 10px;
     color:rgb(43, 191, 240);
 }
+
+.icon:hover{
+  cursor : pointer;
+}
