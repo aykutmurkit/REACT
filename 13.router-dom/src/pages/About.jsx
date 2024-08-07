@@ -1,8 +1,16 @@
 import React from 'react'
+import { Link, Outlet } from 'react-router-dom'
 
 function About() {
   return (
-    <div>About</div>
+    <div>
+      <h1> ABOUt</h1>
+      <hr/>
+      <Link to="employee">Çalışanlar Hakkında</Link>
+      <Link to="company">Şirket Hakkında</Link>
+      <Outlet/>
+    </div>
+    
   )
 }
 
