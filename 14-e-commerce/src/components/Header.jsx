@@ -4,8 +4,12 @@ import "../css/Header.css";
 import { FaBasketShopping } from "react-icons/fa6";
 import { MdSunny } from "react-icons/md";
 import { FaMoon } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 function Header() {
+
+  const navigate = useNavigate();
+
   const [theme, setTheme] = useState(false);
 
   const changeTheme = () => {
@@ -30,7 +34,7 @@ function Header() {
       }}
     >
       <div className="flex-row">
-        <img className="logo" src="./src/images/logo.png" />
+        <img className="logo" onClick={()=>{navigate("/")}} src="./src/images/logo.png" style={{cursor:"pointer"}}/>
       </div>
       <div className="flex-row">
         <input className="search-input" placeholder="🔎 Ara" />
