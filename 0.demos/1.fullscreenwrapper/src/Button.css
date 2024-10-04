@@ -1,0 +1,18 @@
+.fixed-button {
+    position: fixed; /* Sabit konumlandırma */
+    top: 20px;       /* Üstten 20 piksel */
+    right: 20px;     /* Sağdan 20 piksel */
+    padding: 10px 20px; /* Butonun iç boşlukları */
+    background-color: #007bff; /* Buton arka plan rengi */
+    color: white;    /* Buton metin rengi */
+    border: none;    /* Kenarlık yok */
+    border-radius: 5px; /* Kenar yuvarlama */
+    cursor: pointer;  /* İmleci gösteren bir işaretçi */
+    font-size: 16px;  /* Font boyutu */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Gölge efekti */
+  }
+  
+  .fixed-button:hover {
+    background-color: #0056b3; /* Hover durumunda buton rengi */
+  }
+  
